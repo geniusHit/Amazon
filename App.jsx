@@ -1,29 +1,36 @@
 import React from 'react'
-import Navbar from './Components/Navbar'
 import './bootstrap.min.css'
-import Nav2 from './Components/Nav2'
-import Carousel from './Pages/Carousel'
 import './index.css'
 import './App.css'
-import Objects1 from './Pages/Objects1'
-import Kitchen from './Pages/Kitchen'
-import Footer1 from './Components/Footer1'
-import Footer2 from './Components/Footer2'
-import {Routes, Route, BrowserRouter} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import Signup from './Pages/Signup'
 import Home from './Pages/Home'
+import AdminSignin from './Pages/AdminSignin'
+import AdminPage from './Pages/AdminPage'
+import Signin from './Pages/Signin'
+import AddProducts from './Pages/AddProducts'
+import Products from './Pages/Products'
+import Cart from './Pages/Cart'
+import YourAccount from './Pages/YourAccount'
+import ProductDetails from './Pages/ProductDetails'
+import CheckingOTP from './Pages/CheckingOTP'
 
 const App = () => {
   return (
     <div>
-      <Navbar/>
-      <Nav2/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/signup' element={<Signup/>}></Route>
+        <Route path='/admin' element={<AdminSignin/>}></Route>
+        <Route path='/adminpage' element={<AdminPage/>}></Route>
+        <Route path='/signin' element={<Signin/>}></Route>
+        <Route path='/addproducts' element={<AddProducts/>}></Route>
+        <Route path='/products' element={<Products/>}></Route>
+        <Route path='/cart' element={<Cart/>}></Route>
+        <Route path='/youraccount' element={<YourAccount/>}></Route>
+        <Route path='/productdetails' element={<ProductDetails/>}></Route>
+        <Route path='/checkotp' element={<CheckingOTP/>}></Route>
       </Routes>
-      <Footer1/>
-      <Footer2/>
     </div>
   )
 }
