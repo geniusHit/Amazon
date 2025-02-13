@@ -35,33 +35,44 @@ const Carousel = () => {
     ref.current?.classList.add('active-border');
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextButton = document.querySelector('.carousel-control-next');
+      if (nextButton) {
+        nextButton.click(); // Simulates a click to move the carousel to the next slide
+      }
+    }, 4000); // 4 seconds interval
+
+    return () => clearInterval(interval); // Cleanup on component unmount
+  }, []);
+
   return (
-    <div style={{minWidth:"1350px", height:"281px"}}>
-      <div id="carouselExample" className="carousel slide" style={{ width: "100%"}}>
+    <div style={{ minWidth: "1350px", height: "281px" }}>
+      <div id="carouselExample" className="carousel slide" style={{ width: "100%" }}>
         <div className="carousel-inner" style={{ width: "100%", margin: "auto" }}>
           <div className="carousel-item active">
-            <img src={img1} className="d-block" style={{width:"100%"}} alt="..." />
+            <img src={img1} className="d-block" style={{ width: "100%" }} alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={img2} className="d-block" alt="..." style={{width:"100%"}} />
+            <img src={img2} className="d-block" alt="..." style={{ width: "100%" }} />
           </div>
           <div className="carousel-item">
-            <img src={img3} className="d-block" alt="..." style={{width:"100%"}} />
+            <img src={img3} className="d-block" alt="..." style={{ width: "100%" }} />
           </div>
           <div className="carousel-item">
-            <img src={img4} className="d-block" alt="..." style={{width:"100%"}} />
+            <img src={img4} className="d-block" alt="..." style={{ width: "100%" }} />
           </div>
           <div className="carousel-item">
-            <img src={img5} className="d-block" alt="..." style={{width:"100%"}} />
+            <img src={img5} className="d-block" alt="..." style={{ width: "100%" }} />
           </div>
           <div className="carousel-item">
-            <img src={img6} className="d-block" alt="..." style={{width:"100%"}} />
+            <img src={img6} className="d-block" alt="..." style={{ width: "100%" }} />
           </div>
           <div className="carousel-item">
-            <img src={img7} className="d-block" alt="..." style={{width:"100%"}} />
+            <img src={img7} className="d-block" alt="..." style={{ width: "100%" }} />
           </div>
           <div className="carousel-item">
-            <img src={img8} className="d-block" alt="..." style={{width:"100%"}} />
+            <img src={img8} className="d-block" alt="..." style={{ width: "100%" }} />
           </div>
         </div>
 

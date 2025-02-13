@@ -41,6 +41,7 @@ import img32 from '../assets/Pictures/Vaccum1x._SY116_CB410830552_.jpg'
 const Objects=[
     {
         title:"Revamp your home in style",
+        search:"Home",
         obj:[
             {
                 img:img1,
@@ -69,6 +70,7 @@ const Objects=[
 
     {
         title:"Appliances for your home | Up to 55% off",
+        search:"Appliances",
         obj:[
             {
                 img:img5,
@@ -95,6 +97,7 @@ const Objects=[
 
     {
         title:"Starting ₹149 | Headphones",
+        search:"Headphones",
         obj:[
             {
                 img:img9,
@@ -121,6 +124,7 @@ const Objects=[
 
     {
         title:"Automotive essentials | Up to 60% off",
+        search:"Automotive",
         obj:[
             {
                 img:img13,
@@ -147,6 +151,7 @@ const Objects=[
 
     {
         title:"Starting ₹199 | Amazon Brands & more",
+        search:"Brands",
         obj:[
             {
                 img:img17,
@@ -173,6 +178,7 @@ const Objects=[
 
     {
         title:"Up to 60% off | Styles for women",
+        search:"Women",
         obj:[
             {
                 img:img21,
@@ -199,6 +205,7 @@ const Objects=[
 
     {
         title:"Min. 40% off | Fun toys & games | Amazon brands",
+        search:"Toys,games",
         obj:[
             {
                 img:img25,
@@ -225,6 +232,7 @@ const Objects=[
 
     {
         title:"Up to 60% off | Professional tools, testing & more",
+        search:"Tools,Testing",
         obj:[
             {
                 img:img29,
